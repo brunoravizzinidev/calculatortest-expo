@@ -89,6 +89,7 @@ export const useCalculadora = () => {
 	};
 
 	const btnSumar = () => {
+		// hay que validar si ya hay 2 número ejecutar operación
 		cambiarNumPorAnt();
 		ultimaOperacion.current = Operadores.sumar;
 	};
