@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
+import Reactotron from 'reactotron-react-native';
 
 import { stylesMaster } from '../theme/appTheme';
 import BotonCalc from '../components/BotonCalc';
@@ -20,6 +21,8 @@ const CalculadoraScreen = () => {
 		calcular,
 	} = useCalculadora();
 
+	Reactotron.log('hello rendering world');
+
 	return (
 		<View style={stylesMaster.calcContainer}>
 			{numeroAnterior !== '0' && (
@@ -34,6 +37,12 @@ const CalculadoraScreen = () => {
 			>
 				{numero}
 			</Text>
+			<Button
+				title="Test Log"
+				onPress={() => {
+					Reactotron.log('hello rendering world');
+				}}
+			></Button>
 			<View style={stylesMaster.rowStyle}>
 				<BotonCalc texto="C" action={limpiarFunc} color="#9B9B9B" />
 				<BotonCalc texto="+/-" color="#9B9B9B" action={toggleSign} />
