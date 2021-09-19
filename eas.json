@@ -1,15 +1,21 @@
 {
   "build": {
+<<<<<<< HEAD
     "preview": {
       "distribution": "internal"
     },
+=======
+>>>>>>> 68280b75e7fbf7595ae41ce17e45ca8aedf23050
     "release": {},
     "development": {
       "developmentClient": true,
       "distribution": "internal"
     }
+<<<<<<< HEAD
   },
   "submit": {
     "release": {}
+=======
+>>>>>>> 68280b75e7fbf7595ae41ce17e45ca8aedf23050
   }
 }
